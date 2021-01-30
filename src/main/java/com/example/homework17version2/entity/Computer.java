@@ -1,18 +1,11 @@
-package com.cursor.homework17springdatacomputer.model;
-
+package com.example.homework17version2.entity;
 import lombok.Data;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 
-
 @Entity(name = "computer")
-@Component
 @Table
 @Data
-@Scope("prototype")
 public class Computer {
     @Id
     @Column
@@ -27,7 +20,7 @@ public class Computer {
     @Column
     private int memory;
     @Column
-    private boolean isNew;
+    private boolean used;
     @Column
     private String materialType;
     @Column
@@ -48,7 +41,7 @@ public class Computer {
         this.manufacturer = manufacturer;
         this.processor = processor;
         this.memory = memory;
-        this.isNew = isNew;
+        this.used = isNew;
         this.materialType = materialType;
         this.price = price;
         this.release = release;

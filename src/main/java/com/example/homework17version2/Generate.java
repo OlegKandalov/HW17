@@ -1,7 +1,6 @@
-package com.cursor.homework17springdatacomputer;
+package com.example.homework17version2;
 
-import com.cursor.homework17springdatacomputer.model.Computer;
-import org.springframework.stereotype.Component;
+import com.example.homework17version2.entity.Computer;
 
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -9,7 +8,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-@Component
 public class Generate {
     final static Random random = new Random();
 
@@ -37,7 +35,7 @@ public class Generate {
     }
 
     public static boolean gIsNew() {
-       return random.nextBoolean();
+        return random.nextBoolean();
     }
 
     public static String gMaterialType() {
